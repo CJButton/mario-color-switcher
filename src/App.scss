@@ -21,8 +21,32 @@
   color: #09d3ac;
 }
 
-$luigi-color: #3B7B1C;
-$skin-color: #EF9258;
+:root {
+  --hair-color: #3B7B1C;
+  --clothes-color: #ffffff;
+  --skin-color: #EF9258;
+
+  --primary-color: #302AE6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+  --hair-color: #C66431;
+  --clothes-color: #E93F36;
+  --skin-color: #EF9258;
+
+  --primary-color: #9A97F3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+}
+
+// $luigi-color: #3B7B1C;
+// $luigi-skin-color: #EF9258;
 
 .character {
 
@@ -33,13 +57,13 @@ $skin-color: #EF9258;
     height: 20px;
     width: 100px;
     margin-left: 20px;
-    background-color: #ffffff;
+    background-color: var(--clothes-color);
   }
 
   .hatBottom {
     height: 20px;
     width: 180px;
-    background-color: #ffffff;
+    background-color: var(--clothes-color);
   }
 }
 .head {
@@ -48,19 +72,19 @@ $skin-color: #EF9258;
     display: flex;
     height: 20px;
     .head-0-0 {
-      background-color: $luigi-color;
+      background-color: var(--hair-color);
       width: 60px;
     }
     .head-0-1 {
-      background-color: $skin-color;
+      background-color: var(--skin-color);
       width: 40px;
     }
     .head-0-2 {
-      background-color: $luigi-color;
+      background-color: var(--hair-color);
       width: 20px;
     }
     .head-0-3 {
-      background-color: $skin-color;
+      background-color: var(--skin-color);
       width: 20px;
     }
   }
@@ -68,28 +92,28 @@ $skin-color: #EF9258;
     display: flex;
     height: 20px;
     .head-1-0 {
-      background-color: $luigi-color;
+      background-color: var(--hair-color);
       width: 20px;
       margin-left: -20px;
     }
     .head-1-1 {
-      background-color: $skin-color;
+      background-color: var(--skin-color);
       width: 20px;
     }
     .head-1-2 {
-      background-color: $luigi-color;
+      background-color: var(--hair-color);
       width: 20px;
     }
     .head-1-3 {
-      background-color: $skin-color;
+      background-color: var(--skin-color);
       width: 60px;
     }
     .head-1-4 {
-      background-color: $luigi-color;
+      background-color: var(--hair-color);
       width: 20px;
     }
     .head-1-5 {
-      background-color: $skin-color;
+      background-color: var(--skin-color);
       width: 60px;
     }
   }
@@ -97,28 +121,28 @@ $skin-color: #EF9258;
     display: flex;
     height: 20px;
     .head-2-0 {
-      background-color: $luigi-color;
+      background-color: var(--hair-color);
       width: 20px;
       margin-left: -20px;
     }
     .head-2-1 {
-      background-color: $skin-color;
+      background-color: var(--skin-color);
       width: 20px;
     }
     .head-2-2 {
-      background-color: $luigi-color;
+      background-color: var(--hair-color);
       width: 40px;
     }
     .head-2-3 {
-      background-color: $skin-color;
+      background-color: var(--skin-color);
       width: 60px;
     }
     .head-2-4 {
-      background-color: $luigi-color;
+      background-color: var(--hair-color);
       width: 20px;
     }
     .head-2-5 {
-      background-color: $skin-color;
+      background-color: var(--skin-color);
       width: 60px;
     }
   }
@@ -126,21 +150,21 @@ $skin-color: #EF9258;
     display: flex;
     height: 20px;
     .head-3-0 {
-      background-color: $luigi-color;
+      background-color: var(--hair-color);
       width: 40px;
       margin-left: -20px;
     }
     .head-3-1 {
-      background-color: $skin-color;
+      background-color: var(--skin-color);
       width: 80px;
     }
     .head-3-2 {
-      background-color: $luigi-color;
+      background-color: var(--hair-color);
       width: 80px;
     }
   }
   .head-4 {
-    background-color: $skin-color;
+    background-color: var(--skin-color);
     height: 20px;
     width: 140px;
     margin-left: 20px;

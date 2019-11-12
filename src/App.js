@@ -1,8 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.scss';
 
-function App() {
+const App = () => {
+  const [appTheme, setTheme] = useState('light')
+
+  const changeTheme = () => {
+    const theme = appTheme === 'dark' ? 'light' : 'dark';
+    setTheme(theme);
+    document.documentElement.setAttribute("data-theme", theme);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -42,6 +49,7 @@ function App() {
           <div className="head-4" />
         </div>
         </div>
+        <button onClick={changeTheme}>Change Color</button>
       </header>
     </div>
   );
