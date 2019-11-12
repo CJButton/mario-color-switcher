@@ -21,17 +21,129 @@
   color: #09d3ac;
 }
 
-.hat {
-  background-color: #ffffff;
+$luigi-color: #3B7B1C;
+$skin-color: #EF9258;
 
+.character {
+
+.hat {
+  height: 40px;
+  width: 100%;
   .hatTop {
     height: 20px;
     width: 100px;
+    margin-left: 20px;
+    background-color: #ffffff;
   }
 
   .hatBottom {
     height: 20px;
-    width: 200px;
+    width: 180px;
+    background-color: #ffffff;
   }
-
+}
+.head {
+  width: 100%;
+  .head-0 {
+    display: flex;
+    height: 20px;
+    .head-0-0 {
+      background-color: $luigi-color;
+      width: 60px;
+    }
+    .head-0-1 {
+      background-color: $skin-color;
+      width: 40px;
+    }
+    .head-0-2 {
+      background-color: $luigi-color;
+      width: 20px;
+    }
+    .head-0-3 {
+      background-color: $skin-color;
+      width: 20px;
+    }
+  }
+  .head-1 {
+    display: flex;
+    height: 20px;
+    .head-1-0 {
+      background-color: $luigi-color;
+      width: 20px;
+      margin-left: -20px;
+    }
+    .head-1-1 {
+      background-color: $skin-color;
+      width: 20px;
+    }
+    .head-1-2 {
+      background-color: $luigi-color;
+      width: 20px;
+    }
+    .head-1-3 {
+      background-color: $skin-color;
+      width: 60px;
+    }
+    .head-1-4 {
+      background-color: $luigi-color;
+      width: 20px;
+    }
+    .head-1-5 {
+      background-color: $skin-color;
+      width: 60px;
+    }
+  }
+  .head-2 {
+    display: flex;
+    height: 20px;
+    .head-2-0 {
+      background-color: $luigi-color;
+      width: 20px;
+      margin-left: -20px;
+    }
+    .head-2-1 {
+      background-color: $skin-color;
+      width: 20px;
+    }
+    .head-2-2 {
+      background-color: $luigi-color;
+      width: 40px;
+    }
+    .head-2-3 {
+      background-color: $skin-color;
+      width: 60px;
+    }
+    .head-2-4 {
+      background-color: $luigi-color;
+      width: 20px;
+    }
+    .head-2-5 {
+      background-color: $skin-color;
+      width: 60px;
+    }
+  }
+  .head-3 {
+    display: flex;
+    height: 20px;
+    .head-3-0 {
+      background-color: $luigi-color;
+      width: 40px;
+      margin-left: -20px;
+    }
+    .head-3-1 {
+      background-color: $skin-color;
+      width: 80px;
+    }
+    .head-3-2 {
+      background-color: $luigi-color;
+      width: 80px;
+    }
+  }
+  .head-4 {
+    background-color: $skin-color;
+    height: 20px;
+    width: 140px;
+    margin-left: 20px;
+  }
+}
 }
