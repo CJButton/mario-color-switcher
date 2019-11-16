@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import './App.scss';
 
+const nTimes = (n, cb) => {
+  const returnedElements = [];
+  for (let i = 0; i < n; i++) {
+    returnedElements.push(cb(i))
+  }
+  return returnedElements;
+}
+
 const App = () => {
-  const [appTheme, setTheme] = useState('light')
+  const [appTheme, setTheme] = useState('luigi')
 
   const changeTheme = () => {
-    const theme = appTheme === 'dark' ? 'light' : 'dark';
+    const theme = appTheme === 'mario' ? 'luigi' : 'mario';
     setTheme(theme);
     document.documentElement.setAttribute("data-theme", theme);
   }
@@ -20,31 +28,24 @@ const App = () => {
         </div>
         <div className="head">
           <div className="head-0">
-            <div className="head-0-0"></div>
-            <div className="head-0-1"></div>
-            <div className="head-0-2"></div>
-            <div className="head-0-3"></div>
+            {nTimes(4, (i) => (
+                <div className={`head-0-${i}`} />
+            ))}
           </div>
           <div className="head-1">
-            <div className="head-1-0"></div>
-            <div className="head-1-1"></div>
-            <div className="head-1-2"></div>
-            <div className="head-1-3"></div>
-            <div className="head-1-4"></div>
-            <div className="head-1-5"></div>
+            {nTimes(6, (i) => (
+                <div className={`head-1-${i}`} />
+            ))}
           </div>
           <div className="head-2">
-            <div className="head-2-0"></div>
-            <div className="head-2-1"></div>
-            <div className="head-2-2"></div>
-            <div className="head-2-3"></div>
-            <div className="head-2-4"></div>
-            <div className="head-2-5"></div>
+            {nTimes(6, (i) => (
+                <div className={`head-2-${i}`} />
+            ))}
           </div>
           <div className="head-3">
-            <div className="head-3-0"></div>
-            <div className="head-3-1"></div>
-            <div className="head-3-2"></div>
+            {nTimes(3, (i) => (
+                <div className={`head-3-${i}`} />
+            ))}
           </div>
           <div className="head-4" />
         </div>
