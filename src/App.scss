@@ -155,4 +155,185 @@
       margin-left: 20px;
     }
   }
+  
+  .body {
+    .body-0 {
+      display: flex;
+      height: 20px;
+      .body-0-0 {
+        background-color: var(--hair-color);
+        width: 40px;
+        // margin-left: 40px;
+      }
+      .body-0-1 {
+        background-color: var(--clothes-color);
+        width: 20px;
+      }
+      .body-0-2 {
+        background-color: var(--hair-color);
+        width: 60px;
+      }
+    }
+    .body-1 {
+      display: flex;
+      height: 20px;
+      .body-1-0 {
+        background-color: var(--hair-color);
+        width: 60px;
+        margin-left: -20px;
+      }
+      .body-1-1 {
+        background-color: var(--clothes-color);
+        width: 20px;
+      }
+      .body-1-2 {
+        background-color: var(--hair-color);
+        width: 40px;
+      }
+      .body-1-3 {
+        background-color: var(--clothes-color);
+        width: 20px;
+      }
+      .body-1-4 {
+        background-color: var(--hair-color);
+        width: 60px;
+      }
+    }
+    .body-2 {
+      display: flex;
+      height: 20px;
+      .body-2-0 {
+        background-color: var(--hair-color);
+        width: 80px;
+        margin-left: -40px;
+      }
+      .body-2-1 {
+        background-color: var(--clothes-color);
+        width: 80px;
+      }
+      .body-2-2 {
+        background-color: var(--hair-color);
+        width: 80px;
+      }
+    }
+    .body-3 {
+      display: flex;
+      height: 20px;
+      .body-3-0 {
+        background-color: var(--skin-color);
+        width: 40px;
+        margin-left: -40px;
+      }
+      .body-3-1 {
+        background-color: var(--hair-color);
+        width: 20px;
+      }
+      .body-3-2 {
+        background-color: var(--clothes-color);
+        width: 20px;
+      }
+      .body-3-3 {
+        background-color: var(--skin-color);
+        width: 20px;
+      }
+      .body-3-4 {
+        background-color: var(--clothes-color);
+        width: 40px;
+      }
+      .body-3-5 {
+        background-color: var(--skin-color);
+        width: 20px;
+      }
+      .body-3-6 {
+        background-color: var(--clothes-color);
+        width: 20px;
+      }
+      .body-3-7 {
+        background-color: var(--hair-color);
+        width: 20px;
+      }
+      .body-3-8 {
+        background-color: var(--skin-color);
+        width: 40px;
+      }
+    }
+    .body-4 {
+      display: flex;
+      height: 20px;
+      .body-4-0 {
+        background-color: var(--skin-color);
+        width: 60px;
+        margin-left: -40px;
+      }
+      .body-4-1 {
+        background-color: var(--clothes-color);
+        width: 120px;
+      }
+      .body-4-2 {
+        background-color: var(--skin-color);
+        width: 60px;
+      }
+    }
+    .body-5 {
+      display: flex;
+      height: 20px;
+      .body-5-0 {
+        background-color: var(--skin-color);
+        width: 40px;
+        margin-left: -40px;
+      }
+      .body-5-1 {
+        background-color: var(--clothes-color);
+        width: 160px;
+      }
+      .body-5-2 {
+        background-color: var(--skin-color);
+        width: 40px;
+      }
+    }
+    .body-6 {
+      display: flex;
+      height: 20px;
+      .body-6-0 {
+        background-color: var(--clothes-color);
+        width: 60px;
+        margin-right: 20px;
+      }
+      .body-6-1 {
+        background-color: var(--clothes-color);
+        width: 60px;
+        margin-left: 20px;
+      }
+    }
+    .body-7 {
+      display: flex;
+      height: 20px;
+      .body-7-0 {
+        background-color: var(--hair-color);
+        width: 60px;
+        margin-left: -20px;
+        margin-right: 40px;
+      }
+      .body-7-1 {
+        background-color: var(--hair-color);
+        width: 60px;
+        margin-left: 40px;
+      }
+    }
+    .body-8 {
+      display: flex;
+      height: 20px;
+      .body-8-0 {
+        background-color: var(--hair-color);
+        width: 80px;
+        margin-left: -40px;
+        margin-right: 40px;
+      }
+      .body-8-1 {
+        background-color: var(--hair-color);
+        width: 80px;
+        margin-left: 40px;
+      }
+    }
+  }
 }
