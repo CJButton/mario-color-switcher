@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import nTimes from './helpers';
-import Body from './Body'
+import RenderSection from './RenderSection'
 import './App.scss';
 
 const App = () => {
@@ -12,45 +11,39 @@ const App = () => {
     document.documentElement.setAttribute("data-theme", theme);
   }
 
+  const hatData = [
+    { line: 0, parts: 0 },
+    { line: 1, parts: 0 },
+  ]
+
+  const headData = [
+    { line: 0, parts: 4 },
+    { line: 1, parts: 6 },
+    { line: 2, parts: 6 },
+    { line: 3, parts: 3 },
+    { line: 4, parts: 0 },
+  ]
+
+  const bodyData = [
+    { line: 0, parts: 3 },
+    { line: 1, parts: 5 },
+    { line: 2, parts: 3 },
+    { line: 3, parts: 9 },
+    { line: 4, parts: 3 },
+    { line: 5, parts: 3 },
+    { line: 6, parts: 3 },
+    { line: 7, parts: 2 },
+    { line: 8, parts: 2 },
+  ]
+
   return (
     <div className="App">
       <header className="App-header">
         <div className="character">
 
-          <div className="hat">
-            <div className="hatTop"/>
-            <div className="hatBottom"/>
-          </div>
-
-          <div className="head">
-            <div className="head-0">
-              {nTimes(4, (i) => (
-                  <div className={`head-0-${i}`} />
-              ))}
-            </div>
-            <div className="head-1">
-              {nTimes(6, (i) => (
-                  <div className={`head-1-${i}`} />
-              ))}
-            </div>
-            <div className="head-2">
-              {nTimes(6, (i) => (
-                  <div className={`head-2-${i}`} />
-              ))}
-            </div>
-            <div className="head-3">
-              {nTimes(3, (i) => (
-                  <div className={`head-3-${i}`} />
-              ))}
-            </div>
-            <div className="head-4" />
-            
-          </div>
-          <div>
-            
-          </div>
-
-          <Body />
+          <RenderSection section="hat" data={hatData} />
+          <RenderSection section="head" data={headData} />
+          <RenderSection section="body" data={bodyData} />
 
         </div>
         <button onClick={changeTheme}>Change Color</button>
